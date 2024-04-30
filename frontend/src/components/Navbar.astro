@@ -1,0 +1,47 @@
+---
+
+---
+
+<script>
+  const enlacesNav = document.querySelectorAll(".nav-link");
+
+  enlacesNav.forEach((enlace) => {
+    enlace.addEventListener("click", function (event) {
+      this.style.color = "#f3f3f4";
+      event.preventDefault();
+    });
+  });
+</script>
+
+<header class="container d-flex justify-content-between align-items-center">
+  <div class="logo">compleet labs</div>
+  <nav>
+    <div class="d-flex justify-content-center align-items-center gap-4">
+      <a href="#home" class="nav-link"> Home </a>
+      <a href="#services" class="nav-link"> Services </a>
+      <a href="#technology" class="nav-link"> Technology </a>
+      <a href="#case-studies" class="nav-link"> Case studies</a>
+      <a href="#about" class="nav-link"> About </a>
+      <div>
+        <i class="bi bi-card-list"></i>
+        <a href="#hire-us"> Hire us</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    height: 60px;
+    background-color: #283345;
+    color: #f3f3f4;
+    & .logo {
+      font-weight: bold;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #7f8691;
+  }
+</style>
