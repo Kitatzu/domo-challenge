@@ -1,0 +1,51 @@
+---
+import Button from "./Button.astro";
+---
+
+<section
+  id="home"
+  class="container d-flex flex-column justify-content-center align-items-start"
+>
+  <div class="title_container">
+    <h1>We build beautiful and reliable web solutions</h1>
+    <p>
+      We strongly believe that communication, trust and transparency are the
+      essential elements of successful business relationship. Ready for the
+      journey?
+    </p>
+  </div>
+  <div class="btn_container d-flex gap-3">
+    <Button title="Learn More" />
+
+    <button> Our Projects <i class="bi bi-arrow-right"></i></button>
+  </div>
+</section>
+
+<style>
+  .container {
+    width: 100%;
+    height: 100vh;
+
+    .title_container {
+      width: 50%;
+      & h1 {
+        color: #ffffff;
+      }
+
+      & p {
+        width: 90%;
+        color: #818893;
+      }
+    }
+
+    .btn_container {
+      & :nth-child(2) {
+        background-color: #3871ff;
+        border: none;
+        padding: 4px 20px;
+        color: #e8eeff;
+        font-size: 14px;
+      }
+    }
+  }
+</style>
