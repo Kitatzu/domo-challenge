@@ -1,0 +1,25 @@
+---
+import Button from "./Button.astro";
+const { h5, class: className, ...rest } = Astro.props;
+---
+
+<article
+  class="col-md-4 card d-flex justify-content-center align-items-center gap-5 text-center"
+>
+  <span>
+    <i class={className} {...rest}></i>
+  </span>
+  <div>
+    <h5 class="fw-bold fs-6">{h5}</h5>
+    <slot />
+  </div>
+
+  <Button title="Learn More" />
+</article>
+
+<style>
+  article {
+    width: 350px;
+    height: 400px;
+  }
+</style>
