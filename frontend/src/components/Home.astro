@@ -7,13 +7,20 @@ import Button from "./Button.astro";
   class="container d-flex flex-column justify-content-center align-items-start"
 >
   <div class="title_container">
-    <h1>We build beautiful and reliable web solutions</h1>
-    <p>
+    <h1 class="fs-1 fw-bold w-75">
+      We build beautiful and reliable web solutions
+    </h1>
+    <p class="fw-bolder">
       We strongly believe that communication, trust and transparency are the
       essential elements of successful business relationship. Ready for the
       journey?
     </p>
   </div>
+  <img
+    src="/asset-background.jpg"
+    alt="background-image"
+    class="img-fluid position-absolute z-n1"
+  />
   <div class="btn_container d-flex gap-3">
     <Button title="Learn More" />
 
@@ -36,6 +43,13 @@ import Button from "./Button.astro";
         width: 90%;
         color: #818893;
       }
+    }
+
+    .img-fluid {
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
 
     .btn_container {
