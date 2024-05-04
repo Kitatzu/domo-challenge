@@ -4,12 +4,10 @@ import Button from "./Button.astro";
 
 <section
   id="home"
-  class="container d-flex flex-column justify-content-center align-items-start"
+  class="container w-75 d-flex flex-column justify-content-center align-items-start"
 >
-  <div class="title_container">
-    <h1 class="fs-1 fw-bold w-75">
-      We build beautiful and reliable web solutions
-    </h1>
+  <div class="title_container col-md-6">
+    <h1 class="fs-1 fw-bold">We build beautiful and reliable web solutions</h1>
     <p class="fw-bolder">
       We strongly believe that communication, trust and transparency are the
       essential elements of successful business relationship. Ready for the
@@ -30,17 +28,15 @@ import Button from "./Button.astro";
 
 <style>
   .container {
-    width: 100%;
     height: 100vh;
-
     .title_container {
-      width: 50%;
       & h1 {
+        width: 50%;
         color: #ffffff;
       }
 
       & p {
-        width: 90%;
+        width: 50%;
         color: #818893;
       }
     }
@@ -60,6 +56,19 @@ import Button from "./Button.astro";
         color: #e8eeff;
         font-size: 14px;
       }
+    }
+  }
+
+  @media (width < 800px) {
+    .title_container {
+      & h1,
+      p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    img {
+      display: none;
     }
   }
 </style>
