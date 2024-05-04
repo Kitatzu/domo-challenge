@@ -2,18 +2,63 @@
 
 ---
 
-<header class="container d-flex justify-content-between align-items-center">
-  <div class="logo">compleet labs</div>
-  <nav>
-    <div class="d-flex justify-content-center align-items-center gap-4">
-      <a href="#home" class="nav-link"> Home </a>
-      <a href="#services" class="nav-link"> Services </a>
-      <a href="#technology" class="nav-link"> Technology </a>
-      <a href="#case-studies" class="nav-link"> Case studies</a>
-      <a href="#about" class="nav-link"> About </a>
-      <div>
-        <i class="bi bi-card-list"></i>
-        <a href="#hire-us"> Hire us</a>
+<script>
+  import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+  const navBtn = document.getElementById("navBtn");
+  const navContainer = document.getElementById("navContainer");
+
+  navBtn.addEventListener("click", () => {
+    if (navContainer.classList.contains("d-flex")) {
+      navContainer.classList.remove("d-flex");
+      navContainer.classList.add("d-none");
+      return;
+    } else {
+      navContainer.classList.remove("d-none");
+      navContainer.classList.add("d-flex");
+    }
+  });
+</script>
+
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <div class="logo w-25">compleet labs</div>
+      <button
+        id="navBtn"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div
+        class="d-none d-lg-flex collapse navbar-collapse w-100 justify-content-end"
+        id="navContainer"
+        style="background-color: #283345;"
+      >
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item">
+            <a href="#home" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link"> Services </a>
+          </li>
+          <li class="nav-item">
+            <a href="#technology" class="nav-link"> Technology </a>
+          </li>
+          <li class="nav-item">
+            <a href="#case-studies" class="nav-link"> Case studies</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link"> About </a>
+          </li>
+          <li class="d-flex justify-content-center align-items-center">
+            <a href="#hire-us" class="text-center">
+              <i class="bi bi-card-list"></i> Hire us
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -29,8 +74,20 @@
     }
   }
 
+  li :hover {
+    color: #ffffff;
+  }
+
   a {
     text-decoration: none;
     color: #7f8691;
+  }
+
+  button {
+    border: none;
+  }
+
+  .fa-solid {
+    color: #f3f3f4;
   }
 </style>
