@@ -45,7 +45,19 @@
 
 <style>
   .container-fluid {
+    position: relative;
     background-color: #ffffff;
+  }
+
+  .container-fluid::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #283345;
+    z-index: 0;
   }
 
   span {
