@@ -2,48 +2,49 @@
 
 ---
 
-<section
-  id="about"
-  class="container w-75 d-flex justify-content-center align-items-center pt-5 pb-5"
->
-  <div class="col-md-8">
-    <span class="fs-5">compleet labs</span>
-    <p class="w-50">
-      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-      ut fermentum massa justo sit amet risus. Donec ullamcorper nulla.
-    </p>
-    <div class="d-flex gap-3">
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-solid fa-globe"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
+<section id="about" class="container w-75 pt-5 pb-5">
+  <div class="row">
+    <div class="text_container col-md-8 col-12">
+      <span class="fs-5">compleet labs</span>
+      <p class="w-50">
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+        ut fermentum massa justo sit amet risus. Donec ullamcorper nulla.
+      </p>
+      <div class="d-flex gap-3">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
     </div>
-  </div>
-  <div class="list_container col-md-4 d-flex justify-content-between">
-    <div>
-      <ul>
-        <span>SITEMAP</span>
-        <li class="mt-2">Home</li>
-        <li>Technology</li>
-        <li>Services</li>
-        <li>About</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <span>CASE STUDIES</span>
-        <li class="mt-2">Swiss Airlines</li>
-        <li>Google</li>
-        <li>Apple</li>
-        <li>Nike</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <span>CONTACT</span>
-        <li class="mt-2">Jobs</li>
-        <li>Hire us</li>
-      </ul>
+    <div
+      class="list_container col-md-4 col-12 d-flex flex-row justify-content-center align-items-start"
+    >
+      <div>
+        <ul>
+          <span>SITEMAP</span>
+          <li class="mt-2">Home</li>
+          <li>Technology</li>
+          <li>Services</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <span>CASE STUDIES</span>
+          <li class="mt-2">Swiss Airlines</li>
+          <li>Google</li>
+          <li>Apple</li>
+          <li>Nike</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <span>CONTACT</span>
+          <li class="mt-2">Jobs</li>
+          <li>Hire us</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -65,7 +66,17 @@
 
   .list_container {
     & span {
-      font-size: 14px;
+      font-size: 10px;
+    }
+  }
+
+  @media (width < 768px) {
+    .text_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 2rem;
     }
   }
 </style>
