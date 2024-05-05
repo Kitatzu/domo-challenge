@@ -1,0 +1,25 @@
+---
+const { title } = Astro.props;
+---
+
+<button class="learn_btn">
+  {title}
+</button>
+
+<style>
+  .learn_btn {
+    border: 1px solid grey;
+    background-color: transparent;
+    color: #878d97;
+    border-radius: 3px;
+    padding: 5px 20px;
+    font-size: 14px;
+    transition: 1s all;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #3871ff;
+      border: 1px solid #ffffff;
+    }
+  }
+</style>

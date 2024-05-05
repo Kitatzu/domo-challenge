@@ -1,0 +1,67 @@
+<section id="technology" class="container-fluid">
+  <div class="container w-75 d-flex justify-content-between align-items-center">
+    <div class="row d-flex gap-5">
+      <div class="text_container col-md-6 col-12">
+        <h2>We use cutting edge technology</h2>
+        <p>
+          Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia
+          bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis
+          dis parturient montes, nascetur ridiculus mus. Nulla vitae elit
+          libero, a pharetra augue. Vestibulum id ligula porta felis euismod
+          semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+          auctor.
+        </p>
+      </div>
+      <div class="col-md-4 col-12 d-flex justify-content-center gap-5">
+        <div class="d-flex flex-column align-items-center gap-4">
+          <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          <i class="fa-brands fa-sass" aria-hidden="true"></i>
+          <i class="fa-brands fa-angular" aria-hidden="true"></i>
+        </div>
+        <div class="d-flex flex-column align-items-center gap-4">
+          <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+          <i class="fa-brands fa-node-js" aria-hidden="true"></i>
+          <i class="fa-brands fa-python" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .container-fluid {
+    background-color: #3b73fb;
+    position: relative;
+  }
+
+  .container-fluid::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #3b73fb;
+    z-index: -1;
+  }
+
+  .container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .text_container {
+    & h2 {
+      color: #ffffff;
+    }
+
+    & p {
+      color: #8aacff;
+    }
+  }
+
+  .fa-brands {
+    font-size: 3rem;
+    color: #ffffff;
+  }
+</style>

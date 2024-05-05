@@ -1,0 +1,94 @@
+<section id="case-studies" class="container-fluid">
+  <div
+    class="container w-75 d-flex justify-content-center align-items-center flex-column"
+  >
+    <span class="pt-5 pb-5 text-center">Clients we worked with</span>
+    <div class="row pb-5 gap-5">
+      <div class="col d-flex align-items-center justify-content-center">
+        <img src="/TNW.png" alt="TNW" class="d-block" />
+      </div>
+      <div class="col d-flex align-items-center justify-content-center">
+        <img src="/Google.png" alt="Google" class="d-block" />
+      </div>
+      <div class="col d-flex align-items-center justify-content-center">
+        <img src="/Nike.png" alt="Nike" class="d-block" />
+      </div>
+      <div class="col d-flex align-items-center justify-content-center">
+        <img src="/Airbnb.png" alt="Airbnb" class="d-block" />
+      </div>
+      <div class="col d-flex align-items-center justify-content-center">
+        <img src="/ITNA.png" alt="IT News Africa" class="d-block" />
+      </div>
+    </div>
+    <div class="d-flex gap-5">
+      <article
+        class="card d-flex justify-content-start align-items-start gap-3 p-4"
+      >
+        <h2 class="fs-4 text-start">Get in touch with us</h2>
+        <p class="w-75">
+          Maecenas sed diam eget risus varius blandit sit amet non magna.
+        </p>
+        <button> Hire us</button>
+      </article>
+      <article
+        class="card d-flex justify-content-start align-items-start gap-3 p-4"
+      >
+        <h2 class="fs-4 text-start">Our projects</h2>
+        <p class="w-75">
+          Maecenas sed diam eget risus varius blandit sit amet non magna.
+        </p>
+        <button> See Projects </button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .container-fluid {
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  .container-fluid::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #283345;
+    z-index: 0;
+  }
+
+  span {
+    color: #9d9d9d;
+  }
+
+  img {
+    width: 8rem;
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+
+  .card {
+    background-color: #3871ff;
+    border: none;
+
+    & h2 {
+      color: #ffffff;
+    }
+
+    & p {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    & button {
+      font-size: 14px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      background-color: transparent;
+      padding: 8px 20px;
+    }
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+import Button from "./Button.astro";
+---
+
+<section
+  id="home"
+  class="container w-75 d-flex flex-column justify-content-center align-items-start"
+>
+  <div class="title_container col-md-6">
+    <h1 class="fs-2 fw-bold">We build beautiful and reliable web solutions</h1>
+    <p class="fw-bolder">
+      We strongly believe that communication, trust and transparency are the
+      essential elements of successful business relationship. Ready for the
+      journey?
+    </p>
+  </div>
+  <img
+    src="/asset-background.jpg"
+    alt="background-image"
+    class="img-fluid position-absolute z-n1"
+  />
+  <div class="btn_container d-flex gap-3">
+    <Button title="Learn More" />
+
+    <button> Our Projects <i class="bi bi-arrow-right"></i></button>
+  </div>
+</section>
+
+<style>
+  .container {
+    height: 100vh;
+    .title_container {
+      & h1 {
+        width: 80%;
+        color: #ffffff;
+      }
+
+      & p {
+        width: 90%;
+        font-size: 14px;
+        color: #818893;
+      }
+    }
+
+    .img-fluid {
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .btn_container {
+      & :nth-child(2) {
+        background-color: #3871ff;
+        border: none;
+        padding: 4px 20px;
+        color: #e8eeff;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (width < 800px) {
+    .title_container {
+      & h1,
+      p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+</style>

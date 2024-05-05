@@ -1,0 +1,69 @@
+---
+import Card from "./Card.astro";
+---
+
+<section
+  id="services"
+  class="container d-flex flex-column justify-content-center align-items-center"
+>
+  <div class="text-center fw-bold mb-5">
+    <h2>Our Services</h2>
+    <p class="text-center">
+      We feel very strong about our skills when it comes to planning, designing
+      <br />
+      and coding applications. Here is what we love to do!
+    </p>
+  </div>
+  <div class="row justify-content-center p-0 mx-auto m-md-0 gap-4">
+    <Card
+      class="bi bi-journal-text rounded-circle fs-3 p-3"
+      h5="Bussiness & Product Concept"
+    >
+      <p class="card_p">
+        Analyse bussiness and product concepts at Start-up Workshops or Ongoing
+        Projects' Audits and prepare a viable and sensible product roadmap for
+        archieving a perfect market fit.
+      </p>
+    </Card>
+    <Card
+      class="bi bi-laptop rounded-circle fs-3 p-3"
+      h5="Web & Mobile Development"
+    >
+      <p class="card_p">
+        Plan, develop and test high-quality web- applications using AngularJS,
+        NodeJS, Javascript, Typescript, HTML5 and SASS/ CSS3 frameworks and
+        native mobile languages.
+      </p>
+    </Card>
+    <Card
+      class="bi bi-pencil-square rounded-circle fs-3 p-3"
+      h5="UX & UI Design"
+    >
+      <p class="card_p">
+        Sketch information architecture and simple mock-ups, convert them into
+        clickeable prototypes and finish with usable interface designs to delive
+        a good and reliable user experience.
+      </p>
+    </Card>
+  </div>
+</section>
+
+<style>
+  .text-center {
+    color: #818893;
+
+    & h2 {
+      color: #ffffff;
+    }
+  }
+
+  .bi {
+    color: #ffffff;
+    background-color: #3871ff;
+  }
+
+  .card_p {
+    font-size: 15px;
+    color: #818893;
+  }
+</style>
