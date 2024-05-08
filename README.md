@@ -1,4 +1,4 @@
-# Challenge Técnico StoryDots
+# Challenge DOMO
 
 Este repositorio contiene el código fuente para el challenge técnico proporcionado por <a href="https://www.linkedin.com/company/somos-domo/"> Domo </a>, el mismo trata de la construccion de una One Page con un framework de preferencia y Bootsrap.
 
